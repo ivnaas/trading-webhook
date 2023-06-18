@@ -26,6 +26,8 @@ or
 make sure port 8080 is open.
 
 ## setup env
+git config --global user.name "ivnaas"
+git config --global user.name "na" 
 ssh-keygen
 cat /home/ec2-user/.ssh/id_rsa.pub
 mkdir gitrepo
