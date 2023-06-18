@@ -12,8 +12,23 @@ Open Insomnia console and send text like below:
 ## How to run Flask webserver
 cd trading-webhook
 SET FLASK_APP=app.py
+or
+export FLASK_APP=app.py 
+
 flask run
+or
+flask run --host=0.0.0.0 --port=8080
 It will listen on http://127.0.0.1:5000 or http://localhost:5000
+or
+<ip address>:8080
 
+## EC2 setup
+make sure port 8080 is open.
 
-
+## setup env
+ssh-keygen
+cat /home/ec2-user/.ssh/id_rsa.pub
+mkdir gitrepo
+cd gitrepo
+git clone -b master git@github.com:ivnaas/trading-webhook.git
+cd trading-webhook/
